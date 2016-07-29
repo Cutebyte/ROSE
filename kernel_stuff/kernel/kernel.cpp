@@ -150,7 +150,4 @@ void kernel_main() {
     terminal_initialize();
 
     terminal_writestring("1Hello world! IT'S ALIVE!!!\n2Newline testing...\n3It works.");
-    terminal_writestring("\n4\n5\n6wew\n7ewe\n8wew\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24 lines. Next one should mess things up.");
-    terminal_writestring("\n25First ruiner");
-    terminal_writestring("\n26Second ruiner");
 }
