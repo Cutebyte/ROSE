@@ -26,10 +26,15 @@ stack_top:
 .type _start, @function
 _start:
 	mov $stack_top, %esp
+	call kernel_early
+
+	call _init
+
 	call kernel_main
-	
+
 	cli
-1:	hlt
-	jmp 1b
+.Lhang:
+	hlt
+	jmp .Lhang
 
 .size _start, . - _start
